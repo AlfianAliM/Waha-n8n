@@ -1,29 +1,76 @@
-Sistem Otomatisasi Pelabelan Pelanggan: Cara Baru Mengelola dan Menganalisis Kontak WhatsApp
+# 📘 Sistem Otomatisasi Pelabelan Pelanggan WhatsApp
 
-Dalam proses akuisisi pelanggan, WhatsApp sering kali menjadi jalur utama komunikasi antara tim dan calon pelanggan. Setiap percakapan bisa mengandung informasi penting seperti tingkat ketertarikan, kebutuhan, atau kesiapan membeli.
-Namun, selama ini proses pengelolaan informasi tersebut (terutama pelabelan) dilakukan secara manual. Tim customer service harus menambahkan label satu per satu, lalu mencocokkannya kembali ke data pelanggan. Proses ini rentan terlewat, sulit dilacak, dan tidak efisien untuk kebutuhan analisis jangka panjang.
-Tujuan Sistem Pelabelan
-Kami membangun sistem internal yang secara otomatis:
-Mendeteksi jika ada label ditambahkan atau dihapus pada kontak WhatsApp.
-Menyimpan perubahan tersebut ke database internal.
-Menyajikan data pelabelan dalam bentuk dashboard visual yang mudah dianalisis.
-Dengan sistem ini, tim bisa melihat siapa saja pelanggan dengan label tertentu (misalnya: "Grade A" = siap ditindaklanjuti), dan bagaimana pergerakan leads dari waktu ke waktu.
-Syarat atau Aturan Kerja Sistem
-Agar data tetap akurat dan relevan, sistem ini mengikuti beberapa aturan:
-Hanya memproses label dari chat personal (bukan grup)
+Sistem ini dibangun untuk membantu tim dalam mengelola dan menganalisis aktivitas pelabelan pelanggan yang terjadi melalui WhatsApp. Dengan otomatisasi ini, proses pencatatan label menjadi real-time, terdokumentasi, dan mudah dianalisis oleh tim customer service, marketing, dan analis data.
 
+---
 
-Label yang tercatat adalah yang memang aktif saat ini (label yang sudah dihapus tidak ditampilkan)
-Semua data terekam otomatis: siapa memberi label, kepada siapa, dan kapan waktunya
-Alur Kerja Sistem
-Customer service menambahkan label ke kontak pelanggan di WhatsApp,
-Sistem kami otomatis mendeteksi perubahan itu,
-Informasi disimpan dan diperbarui di database, dan
-Data tampil dalam dashboard yang bisa dilihat oleh tim CS, marketing, atau analis
-Dengan alur ini, pelabelan pelanggan bisa dipantau secara real-time dan digunakan untuk berbagai kebutuhan, seperti segmentasi, prioritas follow-up, atau evaluasi performa kampanye.
-Contoh Penggunaan
-Tim marketing ingin broadcast hanya ke kontak dengan label tertentu (misalnya, "Grade A").
-CS lead ingin tahu CS mana yang menghasilkan label berkualitas tinggi.
-Tim data ingin tahu dari kampanye mana pelanggan potensial paling banyak berasal.
-Kesimpulan
-Sistem pelabelan otomatis ini membantu tim bekerja lebih rapi, cepat, dan terukur. Semua interaksi pelanggan bisa dilacak dan digunakan sebagai bahan analisis tanpa membebani tim dengan proses manual.
+## 📌 Latar Belakang
+
+Dalam proses akuisisi pelanggan, WhatsApp sering digunakan sebagai kanal komunikasi utama. Setiap interaksi di dalamnya menyimpan informasi penting seperti:
+
+- Tingkat ketertarikan pelanggan
+- Kesiapan untuk membeli
+- Kebutuhan atau minat khusus
+
+Sebelumnya, pelabelan kontak dilakukan secara manual, dan data diekspor secara terpisah untuk keperluan analisis. Proses ini rentan terlewat, tidak efisien, dan sulit dipantau secara historis.
+
+---
+
+## 🎯 Tujuan Sistem
+
+Sistem ini bertujuan untuk:
+
+- Mendeteksi otomatis saat ada penambahan atau penghapusan label pada kontak WhatsApp
+- Mencatat seluruh aktivitas tersebut ke database internal
+- Menyajikan visualisasi data pelabelan dalam dashboard yang mudah dipantau
+
+Dengan sistem ini, tim dapat:
+
+- Melihat siapa saja yang berlabel “Grade A”, “Grade B”, dst.
+- Mengetahui tren pelabelan dari waktu ke waktu
+- Menganalisis asal leads berdasarkan label
+
+---
+
+## ✅ Aturan Kerja Sistem
+
+Agar data tetap relevan dan akurat, sistem mengikuti aturan berikut:
+
+- Hanya memproses **chat personal** (bukan grup WhatsApp)
+- Hanya mencatat **label yang masih aktif** (label yang sudah dihapus tidak ditampilkan)
+- Merekam **siapa yang memberi label, kepada siapa, dan kapan waktunya**
+
+---
+
+## 🔄 Alur Kerja Sistem
+
+1. CS menambahkan label pada kontak pelanggan di WhatsApp
+2. Sistem otomatis mendeteksi perubahan tersebut
+3. Informasi label disimpan dan diperbarui ke database
+4. Data ditampilkan dalam dashboard visual yang bisa diakses oleh tim
+
+---
+
+## 💡 Contoh Penggunaan
+
+- Tim marketing ingin broadcast hanya ke kontak berlabel “Grade A”
+- Leader ingin memantau CS mana yang menghasilkan leads berkualitas tinggi
+- Tim data ingin tahu kampanye mana menghasilkan leads potensial tertinggi
+
+---
+
+## 🧠 Manfaat Sistem
+
+- Pelabelan jadi **konsisten dan real-time**
+- Meningkatkan **efisiensi kerja tim CS dan marketing**
+- Membantu **pengambilan keputusan berbasis data**
+- Menjadi dasar untuk **remarketing dan segmentasi**
+
+---
+
+## 📈 Rencana Pengembangan
+
+- Menampilkan performa kampanye berdasarkan distribusi label (per channel iklan)
+- Membangun model forecasting untuk memprediksi sebaran label dari kampanye mendatang
+
+---
